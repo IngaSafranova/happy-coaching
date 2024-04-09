@@ -30,4 +30,15 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+  
+/* custom class to give full viewport for sections*/
+
+@layer utilities {
+    .section-min-height {
+        /* 100vh - height of the header*/
+        min-height: calc(100vh - 68px);
+    }
+}
+
+/* then need to put it in tailwind.config file*/
 }
