@@ -1,6 +1,6 @@
 
 import "./globals.css";
-import Navbar from "./ui/components/Navbar";
+import Navbar from "./ui/components/navbar";
 import { Kumbh_Sans } from "next/font/google";
 
  const kumbh = Kumbh_Sans({
