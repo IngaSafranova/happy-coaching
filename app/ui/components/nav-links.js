@@ -32,7 +32,7 @@ function NavLinks({onClick}) {
                   key={link.name}
                   href={link.href}
                   className={clsx(
-                    "text-gray hover:text-darkBlue hover:font-semibold ",
+                    "text-gray hover:text-darkBlue hover:font-semibold",
                     {
                       "font-semibold text-darkBlue": pathName === link.href,
                     }
