@@ -28,7 +28,7 @@ export default function CloseMenuButton({isOpen, onClose }) {
               "font-semibold text-darkBlue": pathName === "/guide",
             }
           )}
-        />
+        >Get your guide now</Link>
       </nav>
     </div>
   );
