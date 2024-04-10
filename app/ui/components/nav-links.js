@@ -21,7 +21,7 @@ const links = [
   },
 ];
 
-function NavLinks() {
+function NavLinks({onClick}) {
 
   const pathName = usePathname()
   return (
@@ -32,11 +32,12 @@ function NavLinks() {
                   key={link.name}
                   href={link.href}
                   className={clsx(
-                    "text-gray hover:text-darkBlue hover:font-semibold items-center",
+                    "text-gray hover:text-darkBlue hover:font-semibold ",
                     {
                       "font-semibold text-darkBlue": pathName === link.href,
                     }
                   )}
+                  onClick={onClick}
                 >
                   <p>{link.name}</p>
                 </Link>

@@ -25,6 +25,9 @@ module.exports = {
         widescreen: { raw: "(min-aspect-ratio: 3/2)" },
         tallscreen: { raw: "(max-aspect-ratio: 13/20)" },
       },
+      height: {
+        navHeight: " calc(100vh - 60px)",
+      },
     },
   },
   plugins: [],

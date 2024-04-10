@@ -7,41 +7,51 @@ import Link from 'next/link'
 import clsx from 'clsx'
 import { usePathname } from 'next/navigation'
 
-export default function Navbar() {
 
-  //set state for navbar to open or close
-  const [navbar, setNavbar] = useState(true)
+
+// NavbarButton component for toggle button
+const NavbarButton = ({ onClick, navbar }) => (
+  <button
+    className="text-3xl text-darkBlue cursor-pointer absolute right-3  w-8 h-8 sm:hidden"
+    onClick={onClick}
+  >
+    {navbar ? <div>&times;</div> : <div>&#9776;</div>}
+  </button>
+);
+
+export default function Navbar() {
+  const [navbar, setNavbar] = useState(false);
+
+  // Function to toggle navbar state
+  const toggleNavbar = () => setNavbar(!navbar);
   
-  const pathName = usePathname()
-  
+  const pathName = usePathname();
   return (
     <div className="bg-white h-15">
       <section className="max-w-6xl mx-auto p-4 flex justify-between items-center">
         <Image src="/Logo.png" width={128} height={28} alt="" className="" />
-        <button
-          className="text-3xl text-darkBlue  cursor-pointer relative w-8 h-8 sm:hidden"
-          onClick={() => setNavbar(!navbar)}
-        >
-          {navbar ? <div>&#9776;</div> : <div>&times;</div>}
-        </button>
+        <NavbarButton onClick={toggleNavbar} navbar={navbar} />
         <div
-          className={`flex flex-col md:flex-row md:gap-x-6 h-10 ${navbar ? "p-1 md:p-0 block" :"hidden" }`}
-            
-          
+          className={`flex-row md:gap-x-6 h-10 
+          `}
         >
           <nav
-            className={`text-gray text-sm flex flex-col sm:flex-row gap-x-7 items-center `}
+            className={`text-gray text-sm flex flex-col  mt-14 sm:mt-0  w-screen sm:w-fit h-screen sm:bg-white sm:h-10 sm:flex-row gap-x-7 bg-blue-900  items-center ${navbar? 'flex' : 'hidden sm:flex'}
+
+            `}
+            
           >
-            <NavLinks onClick={() => setNavbar(!navbar)} />
+            <NavLinks onClick={toggleNavbar} />
             <Link
-              onClick={() => setNavbar(!navbar)}
+              onClick={toggleNavbar}
               href="/guide"
               className={clsx(
                 "bg-complimentaryGreen text-white px-3 py-1 mb-1 rounded hover:font-semibold",
-                { "font-semibold text-darkBlue": pathName === "/guide" }
+                {
+                  "font-semibold text-darkBlue": pathName === "/guide",
+                }
               )}
             >
-              {" "}
               Get your free guide now
             </Link>
           </nav>
