@@ -2,12 +2,10 @@
 
 import React, {useState} from 'react'
 import NavLinks from './nav-links'
-import Image from 'next/image'
 import Link from 'next/link'
 import clsx from 'clsx'
 import { usePathname } from 'next/navigation'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBars } from '@fortawesome/free-solid-svg-icons'
 import Logo from './logo'
 import DesktopNavLinks from './desktopNavLinks'
 import MobileMenuButton from './mobileMenuButton'
@@ -16,19 +14,21 @@ import { faXmark } from "@fortawesome/free-solid-svg-icons";
 export default function Navbar() {
   
   const [navbar, setNavbar] = useState(false);
+
   // Function to toggle navbar state
   const toggleNavbar = () => setNavbar(!navbar);
 
   const pathName = usePathname();
+  
   return (
-    <>
-      <div className="bg-white h-16 position: relative top-0 left-0 right-0">
+    <header className='w-screen'>
+      <div className="bg-white h-16 position:absolute  top-0 left-0 right-0">
         <section className="max-w-6xl mx-auto p-4 flex justify-between items-center">
-           <div className="hidden  h-16 py-6 sm:flex flex-col justify-center"> 
+           <div className="hidden  h-16 py-6  md:flex flex-col justify-center"> 
             <Logo />
             <DesktopNavLinks />
           </div>{" "}
-          <div className="sm:hidden  flex flex-row my-4">
+          <div className="md:hidden  flex flex-row my-4">
             <Logo />
             <div
               className={`fixed flex flex-col justify-center items-center z-10 top-0 right-0 h-full w-full bg-white text-black transition-transform duration-300 transform ${
@@ -66,6 +66,6 @@ export default function Navbar() {
           </div>
         </section>
       </div>
-    </>
+    </header>
   );
 }

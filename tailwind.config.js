@@ -26,8 +26,12 @@ module.exports = {
         tallscreen: { raw: "(max-aspect-ratio: 13/20)" },
       },
       height: {
-        navHeight: " calc(100vh - 60px)",
+        sectionHeight: " calc(100vh - 60px)",
+        703: '703px'
       },
+      maxWidth: {
+       '8xl': '1440px'
+      }
     },
   },
   plugins: [],

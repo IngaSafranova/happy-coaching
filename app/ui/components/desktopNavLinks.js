@@ -7,12 +7,12 @@ import clsx from "clsx";
 export default function DesktopNavLinks() {
     const pathName = usePathname()
   return ( 
-    <nav className=" absolute right-0 flex flex-row gap-x-6 mr-5 mb-4">
+    <nav className=" absolute right-24 flex flex-row gap-x-6 lg:gap-x-10 lg:-mr-10 mr-5 mb-4">
       <NavLinks />
       <Link
         href="/guide"
         className={clsx(
-          "bg-complimentaryGreen text-white w-fit px-3 py-1  rounded hover:font-semibold",
+          "bg-complimentaryGreen text-white w-fit px-5 py-1 lg:mb-1  rounded hover:font-semibold",
           {
             "font-semibold text-darkBlue": pathName === "/guide",
           }

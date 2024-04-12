@@ -18,8 +18,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={kumbh.className}>
-        <Navbar/>
-        {children}</body>
+        
+          <Navbar />
+          {children}
+        
+      </body>
     </html>
   );
 }
