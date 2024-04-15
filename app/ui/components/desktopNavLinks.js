@@ -3,13 +3,14 @@ import Link from "next/link";
 import React from 'react'
 import { usePathname } from "next/navigation";
 import clsx from "clsx";
+import LinkGuide from "./freeGuide";
 
 export default function DesktopNavLinks() {
     const pathName = usePathname()
-  return ( 
-    <nav className=" absolute right-24 flex flex-row gap-x-6 lg:gap-x-10 lg:-mr-10 mr-5 mb-4">
+  return (
+    <nav className=" absolute right-24 mb-4 mr-5 flex flex-row gap-x-6 lg:-mr-10 lg:gap-x-10">
       <NavLinks />
-      <Link
+      {/* <Link
         href="/guide"
         className={clsx(
           "bg-complimentaryGreen text-white w-fit px-5 py-1 lg:mb-1  rounded hover:font-semibold",
@@ -19,7 +20,10 @@ export default function DesktopNavLinks() {
         )}
       > 
         Get your guide now
-      </Link>
+      </Link> */}
+      <div className="pb-3">
+        <LinkGuide />
+      </div>
     </nav>
   );
 }

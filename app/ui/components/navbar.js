@@ -45,7 +45,7 @@ export default function Navbar() {
                   icon={faXmark}
                 />
               </button>
-              <nav className="flex flex-col justify-center items-center space-y-4">
+              <nav className="flex flex-col justify-center items-center space-y-4 ">
                 <NavLinks onClick={toggleNavbar} />
                 <Link
                   href="/guide"
