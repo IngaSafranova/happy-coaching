@@ -8,7 +8,7 @@ import LinkGuide from "./freeGuide";
 export default function DesktopNavLinks() {
     const pathName = usePathname()
   return (
-    <nav className=" absolute right-24 mb-4 mr-5 flex flex-row gap-x-6 lg:-mr-10 lg:gap-x-10">
+    <nav className=" absolute right-24 mb-2 mr-5 flex flex-row gap-x-6 md:gap-x-5 lg:-mr-10 lg:gap-x-10">
       <NavLinks />
       {/* <Link
         href="/guide"

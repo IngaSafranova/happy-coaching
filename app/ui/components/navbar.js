@@ -37,7 +37,7 @@ export default function Navbar() {
             >
               <Logo />
               <button
-                className="absolute right-7 z-20 top-4 p-3"
+                className="absolute right-7 sm:right-10 z-20 top-4 p-3"
                 onClick={toggleNavbar}
               >
                 <FontAwesomeIcon
