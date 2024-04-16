@@ -1,12 +1,12 @@
-import React from 'react'
-import ServiceCard from './serviceCard';
+import React from "react";
+import HomepageServices from "./homepageServices";
 
 function ServicesCard() {
   return (
-    <div className="mt-4 w-11/12 bg-slate-400 lg:h-[328px] lg:w-[1140px]">
-      <ServiceCard/>
+    <div className=" mt-8 w-11/12 pb-10  lg:mt-10 lg:h-[328px] lg:w-[1140px] ">
+      <HomepageServices />
     </div>
   );
 }
 
-export default ServicesCard
+export default ServicesCard;

@@ -9,6 +9,7 @@ module.exports = {
     extend: {
       colors: {
         darkBlue: "#333461",
+        darkestBlue: '#041434',
         gray: "#4a556c",
         complimentaryGreen: "#20ad96",
         seasalt: "#FAF8F6",
@@ -18,14 +19,18 @@ module.exports = {
         sans: ["Kumbh Sans", "sans-serif"],
       },
       fontSize: {},
-      height: {
-        15: "60px",
+      
+      width: {
+        18: '72px',
+        78: '300px'
       },
       screens: {
         widescreen: { raw: "(min-aspect-ratio: 3/2)" },
         tallscreen: { raw: "(max-aspect-ratio: 13/20)" },
       },
       height: {
+        15: '60px',
+        18: '72px',
         sectionHeight: " calc(100vh - 60px)",
         703: '703px'
       },
