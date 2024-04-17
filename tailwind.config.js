@@ -13,6 +13,7 @@ module.exports = {
         gray: "#4a556c",
         complimentaryGreen: "#20ad96",
         seasalt: "#FAF8F6",
+        lightSeasolt: '#EDEFF5',
         "gray 50 opacity": "rgba(74,85,108,0.5)",
       },
       fontFamily: {

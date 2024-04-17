@@ -1,6 +1,6 @@
-import React from 'react'
-import Image from 'next/image'
-import ServiceCard from './serviceCard'
+import React from "react";
+import Image from "next/image";
+import ServiceCard from "./serviceCard";
 
 const services = [
   {
@@ -26,7 +26,7 @@ const services = [
 function HomepageServices() {
   return (
     <>
-      <div className='flex-col mx-auto w-11/12 lg:grid lg:grid-cols-3 lg:grid-rows-1 lg:grid-flow-col-dense '>
+      <div className="mx-auto w-11/12 flex-col lg:grid lg:grid-flow-col-dense lg:grid-cols-3 lg:grid-rows-1 ">
         {services.map((service) => {
           return (
             <ServiceCard
@@ -42,4 +42,4 @@ function HomepageServices() {
   );
 }
 
-export default HomepageServices
+export default HomepageServices;

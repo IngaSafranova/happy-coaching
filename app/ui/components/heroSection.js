@@ -14,7 +14,7 @@ function HeroSection() {
         <HeroSectionImage />
       </div>
       <div className=" p-4">
-        <div className="w-fit p-6 px-0 lg:absolute lg:left-16">
+        <div className="w-fit p-6 px-0 lg:static lg:left-16">
           <Vector className="fill-complimentaryGreen" />
         </div>
         <HomePageHeroCard />
