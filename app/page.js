@@ -12,9 +12,10 @@ export default function Home() {
 
   return (
     <>
-      <HeroSection/>
+      <HeroSection />
       <IntroductionSection />
-    <ReviewsSection/>
+      <ReviewsSection />
+     
     </>
   );
 }

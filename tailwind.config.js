@@ -33,7 +33,8 @@ module.exports = {
         15: '60px',
         18: '72px',
         sectionHeight: " calc(100vh - 60px)",
-        703: '703px'
+        703: '703px',
+        880: '880px'
       },
       maxWidth: {
        '8xl': '1440px'

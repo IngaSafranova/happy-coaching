@@ -7,9 +7,10 @@ import "slick-carousel/slick/slick-theme.css";
 import Image from "next/image";
 import Stars from "./ratingStars";
 
-function Responsive(props) {
+
+function ResponsiveCarousel() {
   var settings = {
-    dots: true,
+    dots: false,
     infinite: false,
     speed: 500,
     slidesToShow: 4,
@@ -26,7 +27,7 @@ function Responsive(props) {
         },
       },
       {
-        breakpoint: 600,
+        breakpoint: 780,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
@@ -34,7 +35,7 @@ function Responsive(props) {
         },
       },
       {
-        breakpoint: 480,
+        breakpoint: 600,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -45,22 +46,75 @@ function Responsive(props) {
   return (
     <div className="slider-container mt-16">
       <Slider {...settings}>
-        <div className=" ml-20 h-96 w-96  bg-white">
-          <p className="w-78 h-32 text-2xl mx-auto py-12">
+        <div className=" ml-4 w-fit bg-white lg:ml-20 lg:h-96  lg:w-96">
+          <p className=" mx-auto h-32 w-78 py-12 lg:h-32 lg:w-78 text-2xl md:w-fit">
             &quot;I gained so much confidence in my ability to connect and
             deepen my relationships with people.&quot;
-                  </p>
-                  <p className="text-2xl font-bold mt-12 w-fit ml-5">Jane</p>
-                  <Image src='/image 68.png' width='69' height='70' alt='' className="mt-5 ml-5" />
-                  <Stars/>
+          </p>
+          <p className="ml-16 mt-14 lg:ml-16 lg:mt-12 md:mt-28 md:ml-4 w-fit text-2xl font-bold">Jane</p>
+          <Image
+            src="/jane.png"
+            width="69"
+            height="70"
+            alt=""
+            className="ml-16 lg:ml-16 md:ml-4 mt-5 "
+          />
+          <div className="ml-16 lg:ml-16 md:ml-4">
+            <Stars />
+          </div>
         </div>
-        <div className=" ml-32 h-96 w-96 bg-white">
-          <h3>2</h3>
+        <div className=" ml-8 w-fit bg-white lg:ml-28 lg:h-96  lg:w-96">
+          <p className="mx-auto h-32 lg:h-32 lg:w-78 w-78 py-12 text-2xl md:w-fit">
+            &quot;I gained so much confidence in my ability to connect and
+            deepen my relationships with people.&quot;
+          </p>
+          <p className="ml-16 lg:ml-16 mt-14 lg:mt-12 md:mt-28  md:ml-4 w-fit text-2xl font-bold">Cathrine</p>
+          <Image
+            src="/catherine.png"
+            width="69"
+            height="70"
+            alt=""
+            className="ml-16 lg:ml-16 md:ml-4 mt-5"
+          />
+          <div className="ml-16 lg:ml-16 md:ml-4">
+            <Stars />
+          </div>
         </div>
-        <div className="ml-44 h-96 w-96  bg-white">
-          <h3>3</h3>
+        <div className="ml-12 w-fit bg-white lg:ml-36 lg:h-96  lg:w-96">
+          <p className="mx-auto h-32 lg:h-32 lg:w-78 w-78 py-12 md:w-fit text-2xl">
+            &quot;I gained so much confidence in my ability to connect and
+            deepen my relationships with people.&quot;
+          </p>
+          <p className="ml-16 lg:ml-16 md:ml-4 lg:mt-12 md:mt-28 mt-14 w-fit text-2xl font-bold">Jane</p>
+          <Image
+            src="/janeV.png"
+            width="69"
+            height="70"
+            alt=""
+            className="ml-16 lg:ml-16 md:ml-4 mt-5"
+          />
+          <div className="ml-16 lg:ml-16 md:ml-4">
+            <Stars />
+          </div>
         </div>
-        <div className="ml-52 h-96 w-96  bg-white"></div>
+        <div className="ml-16 h-96 w-96 lg:ml-44 bg-white">
+          <p className="mx-auto h-32 lg:h-32 lg:w-78 w-78 py-12  md:w-fit text-2xl">
+            &quot;I gained so much confidence in my ability to connect and
+            deepen my relationships with people.&quot;
+          </p>
+          <p className="ml-16 lg:ml-16 mt-14 lg:mt-12 md:mt-28 md:ml-4 w-fit text-2xl font-bold">Jane</p>
+          <Image
+            src="/jane.png"
+            width="69"
+            height="70"
+            alt=""
+            className="ml-16 lg:ml-16 md:ml-4 mt-5"
+          />
+          <div className="ml-16 lg:ml-16 md:ml-4">
+            <Stars />
+          </div>
+        </div>
+
         <div></div>
         <div></div>
         <div></div>
@@ -70,4 +124,4 @@ function Responsive(props) {
   );
 }
 
-export default Responsive;
+export default ResponsiveCarousel;
