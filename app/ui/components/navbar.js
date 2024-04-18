@@ -20,14 +20,14 @@ export default function Navbar() {
   const pathName = usePathname();
 
   return (
-    // <header className="w-screen max-w-6xl">
-      <div className="position:absolute left-0 right-0  top-0 h-16 bg-white">
+     //<header className="w-screen max-w-6xl">
+      <div className="position:absolute w-screen left-0 right-0  top-0 h-16 bg-white">
         <section className="mx-auto flex max-w-8xl w-screen items-center  justify-between p-4">
           <div className="hidden  h-16 flex-col max-w-6xl justify-center  py-6 md:flex">
             <Logo />
             <DesktopNavLinks />
           </div>{" "}
-          <div className="my-4  flex flex-row md:hidden">
+          <div className="my-auto  flex flex-row md:hidden">
             <Logo />
             <div
               className={`fixed right-0 top-0 z-10 flex h-full w-full transform flex-col items-center justify-center bg-white text-black transition-transform duration-300 ${

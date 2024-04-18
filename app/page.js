@@ -6,6 +6,8 @@ import HeroSection from "./ui/components/heroSection";
 import IntroductionSection from "./ui/components/introductionSection";
 import ReviewsSection from "./ui/components/reviewsSection";
 import BlogSection from "./ui/components/blogSection";
+import FreeGuideSection from "./ui/components/freeGuideSection";
+import CtaSection from "./ui/components/ctaSection";
 
 
 export default function Home() {
@@ -16,8 +18,9 @@ export default function Home() {
       <HeroSection />
       <IntroductionSection />
       <ReviewsSection />
-      <BlogSection/>
-     
+      <BlogSection />
+      <FreeGuideSection/>
+     <CtaSection/>
     </>
   );
 }

@@ -22,7 +22,7 @@ const blogs = [
 function HomepageBlogs() {
   return (
     <>
-      <div className="mx-auto w-fit flex-col lg:grid lg:gap-x-10 lg:grid-cols-3 lg:grid-rows-1">
+      <div className="mx-auto w-fit  flex-col lg:grid lg:gap-x-10 lg:grid-cols-3 lg:grid-rows-1">
         {blogs.map((blog) => {
           return (
             <BlogCard
