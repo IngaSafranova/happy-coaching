@@ -1,4 +1,5 @@
 import "./globals.css";
+import Footer from "./ui/footer";
 import Navbar from "./ui/navbar";
 import { Kumbh_Sans } from "next/font/google";
 
@@ -20,6 +21,7 @@ export default function RootLayout({ children }) {
       <body className={kumbh.className}>
         <Navbar />
         {children}
+        <Footer/>
       </body>
     </html>
   );

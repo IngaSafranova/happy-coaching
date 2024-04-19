@@ -25,7 +25,8 @@ module.exports = {
         18: '72px',
         62: '250px',
         78: '300px',
-        85: '356px'
+        85: '356px',
+        '7xl': '1280px'
       },
       screens: {
         widescreen: { raw: "(min-aspect-ratio: 3/2)" },
@@ -34,6 +35,8 @@ module.exports = {
       height: {
         15: '60px',
         18: '72px',
+        21: '84px',
+        46: '180px',
         sectionHeight: " calc(100vh - 60px)",
         703: '703px',
         840: '840px',
