@@ -1,6 +1,6 @@
-import React from 'react'
-import HomepageBlogs from './homepageBlogs';
-import BlogsLink from './blogsLink';
+import React from "react";
+import HomepageBlogs from "./components/homepageBlogs";
+import BlogsLink from "./components/blogsLink";
 
 function BlogSection() {
   return (
@@ -11,11 +11,11 @@ function BlogSection() {
       <div className="mx-auto h-fit w-10/12 max-w-7xl">
         <HomepageBlogs />
       </div>
-      <div className='mx-auto w-fit mt-20'>
+      <div className="mx-auto mt-20 w-fit">
         <BlogsLink />
       </div>
     </section>
   );
 }
 
-export default BlogSection
+export default BlogSection;

@@ -23,6 +23,7 @@ module.exports = {
       
       width: {
         18: '72px',
+        62: '250px',
         78: '300px',
         85: '356px'
       },
@@ -37,6 +38,9 @@ module.exports = {
         703: '703px',
         840: '840px',
         880: '880px'
+      },
+      minHeight: {
+'section': ' calc(100vh - 64px)'
       },
       maxWidth: {
        '8xl': '1440px'

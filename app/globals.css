@@ -13,7 +13,7 @@
 @layer utilities {
     .section-min-height {
         /* 100vh - height of the header*/
-        min-height: calc(100vh - 68px);
+       min-height: calc(100vh - 64px);
     }
     .max-w-8xl {
       max-width: 1440px;

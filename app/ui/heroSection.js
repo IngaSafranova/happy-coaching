@@ -1,14 +1,13 @@
 import React from "react";
-import Vector from "./vector";
+import Vector from "./components/vector";
 
-
-import SuccessSvg from "./successSvg";
-import HeroSectionImage from "./heroSectionImage";
-import HomePageHeroCard from "./homePageHeroCard";
+import SuccessSvg from "./components/successSvg";
+import HeroSectionImage from "./components/heroSectionImage";
+import HomePageHeroCard from "./components/homePageHeroCard";
 
 function HeroSection() {
   return (
-    <section className="mx-auto flex h-full w-screen max-w-8xl flex-col-reverse justify-evenly bg-seasalt lg:flex-row-reverse">
+    <section className="mx-auto flex h-full w-screen flex-col-reverse justify-evenly bg-seasalt  lg:max-w-8xl lg:flex-row-reverse ">
       <div className="mx-auto h-fit w-fit sm:mt-6">
         <SuccessSvg />
         <HeroSectionImage />
