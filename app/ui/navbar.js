@@ -22,8 +22,8 @@ export default function Navbar() {
   return (
     //<header className="w-screen max-w-6xl">
     <div className="position:absolute left-0 right-0 top-0  h-16 w-screen bg-white">
-      <section className="mx-auto flex w-screen max-w-8xl items-center  justify-between p-4">
-        <div className="hidden  h-16 max-w-8xl flex-col justify-center  py-6 md:flex">
+      <section className="mx-auto flex w-screen lg:max-w-8xl items-center  justify-between p-4">
+        <div className="hidden  h-16 lg:max-w-8xl flex-col justify-center  py-6 md:flex">
           <Logo />
           <DesktopNavLinks />
         </div>{" "}

@@ -1,6 +1,6 @@
 "use client";
 
-import Vector from "./ui/components/vector";
+
 
 import HeroSection from "./ui/heroSection";
 import IntroductionSection from "./ui/introductionSection";
@@ -12,12 +12,12 @@ import CtaSection from "./ui/ctaSection";
 export default function Home() {
   return (
     <>
-      <HeroSection />
+       <HeroSection />
       <IntroductionSection />
       <ReviewsSection />
       <BlogSection />
       <FreeGuideSection />
-      <CtaSection />
+      <CtaSection /> 
     </>
   );
 }
