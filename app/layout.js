@@ -21,7 +21,7 @@ export default function RootLayout({ children }) {
       <body className={kumbh.className}>
         <Navbar />
         {children}
-        {/* <Footer/> */}
+        <Footer/>
       </body>
     </html>
   );

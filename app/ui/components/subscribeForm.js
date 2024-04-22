@@ -65,12 +65,12 @@ export default function SubscribeForm() {
         value={email.name}
         onChange={handleChange}
         placeholder="Enter your email"
-        className=" mb-6 ml-16 mr-4 w-8/12 border-2 border-lightSeasolt px-3 py-4 md:mb-0"
+        className=" mb-6 ml-16 mr-4 w-8/12 sm:w-3/4 sm:p-0 sm:pl-2 sm:m-0 md:mr-4 border-2 border-lightSeasolt px-3 py-4 md:mb-0"
       />
       <button
               type="submit"
             disabled={!canSave}
-        className="ml-24 h-11 w-[150px] rounded-lg bg-complimentaryGreen py-2 text-base font-medium text-white md:ml-0"
+        className="ml-24 h-11 w-[150px] rounded-lg sm:px-2 sm:ml-4 bg-complimentaryGreen py-2 text-base font-medium text-white md:ml-0"
       >
         Subscribe
       </button>
