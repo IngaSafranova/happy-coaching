@@ -12,12 +12,12 @@ import CtaSection from "./ui/ctaSection";
 export default function Home() {
   return (
     <>
-       <HeroSection />
-      <IntroductionSection />
-      <ReviewsSection />
-      <BlogSection />
-      <FreeGuideSection />
-      <CtaSection /> 
+      <HeroSection />
+       <IntroductionSection />
+      {/* <ReviewsSection /> */}
+     <BlogSection />
+     {/* <FreeGuideSection />
+      <CtaSection />   */}
     </>
-  );
+  )
 }

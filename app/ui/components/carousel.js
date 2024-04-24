@@ -16,6 +16,7 @@ function ResponsiveCarousel() {
     slidesToShow: 4,
     slidesToScroll: 4,
     initialSlide: 0,
+  
     responsive: [
       {
         breakpoint: 1024,
@@ -44,81 +45,89 @@ function ResponsiveCarousel() {
     ],
   };
   return (
-    <div className="slider-container mt-16">
+    <div className="slider-container mt-16 overscroll-none ">
       <Slider {...settings}>
-        <div className=" ml-4 w-fit bg-white lg:ml-20 lg:h-96  lg:w-96">
-          <p className=" mx-auto h-32 w-78 py-12 lg:h-32 lg:w-78 text-2xl md:w-fit">
+        <div className=" ml-0 w-fit bg-white lg:ml-20 lg:h-96  lg:w-96">
+          <p className="mx-auto h-32 w-fit px-4 py-12 text-2xl md:w-fit lg:h-32 lg:w-78">
             &quot;I gained so much confidence in my ability to connect and
             deepen my relationships with people.&quot;
           </p>
-          <p className="ml-16 mt-14 lg:ml-16 lg:mt-12 md:mt-28 md:ml-4 w-fit text-2xl font-bold">Jane</p>
+          <p className="ml-16 mt-14 w-fit text-2xl font-bold md:ml-4 md:mt-28 lg:ml-16 lg:mt-12">
+            Jane
+          </p>
           <Image
             src="/jane.png"
             width="69"
             height="70"
             alt=""
-            className="ml-16 lg:ml-16 md:ml-4 mt-5 "
+            className="ml-16 mt-5 md:ml-4 lg:ml-16 "
           />
-          <div className="ml-16 lg:ml-16 md:ml-4">
+          <div className="ml-16 w-fit md:ml-4 lg:ml-16">
             <Stars />
           </div>
         </div>
         <div className=" ml-8 w-fit bg-white lg:ml-28 lg:h-96  lg:w-96">
-          <p className="mx-auto h-32 lg:h-32 lg:w-78 w-78 py-12 text-2xl md:w-fit">
+          <p className="mx-auto h-32 w-fit px-4 py-12 text-2xl md:w-fit lg:h-32 lg:w-78">
             &quot;I gained so much confidence in my ability to connect and
             deepen my relationships with people.&quot;
           </p>
-          <p className="ml-16 lg:ml-16 mt-14 lg:mt-12 md:mt-28  md:ml-4 w-fit text-2xl font-bold">Cathrine</p>
+          <p className="ml-16 mt-14 w-fit text-2xl font-bold  md:ml-4 md:mt-28 lg:ml-16 lg:mt-12">
+            Cathrine
+          </p>
           <Image
             src="/catherine.png"
             width="69"
             height="70"
             alt=""
-            className="ml-16 lg:ml-16 md:ml-4 mt-5"
+            className="ml-16 mt-5 md:ml-4 lg:ml-16"
           />
-          <div className="ml-16 lg:ml-16 md:ml-4">
+          <div className="ml-16 w-fit md:ml-4 lg:ml-16">
             <Stars />
           </div>
         </div>
         <div className="ml-12 w-fit bg-white lg:ml-36 lg:h-96  lg:w-96">
-          <p className="mx-auto h-32 lg:h-32 lg:w-78 w-78 py-12 md:w-fit text-2xl">
+          <p className="mx-auto h-32 px-4 w-fit py-12 text-2xl md:w-fit lg:h-32 lg:w-78">
             &quot;I gained so much confidence in my ability to connect and
             deepen my relationships with people.&quot;
           </p>
-          <p className="ml-16 lg:ml-16 md:ml-4 lg:mt-12 md:mt-28 mt-14 w-fit text-2xl font-bold">Jane</p>
+          <p className="ml-16 mt-14 w-fit text-2xl font-bold md:ml-4 md:mt-28 lg:ml-16 lg:mt-12">
+            Jane
+          </p>
           <Image
             src="/janeV.png"
             width="69"
             height="70"
             alt=""
-            className="ml-16 lg:ml-16 md:ml-4 mt-5"
+            className="ml-16 mt-5 md:ml-4 lg:ml-16"
           />
-          <div className="ml-16 lg:ml-16 md:ml-4">
+          <div className="ml-16 w-fit md:ml-4 lg:ml-16">
             <Stars />
           </div>
         </div>
-        <div className="ml-16 h-96 w-96 lg:ml-44 bg-white">
-          <p className="mx-auto h-32 lg:h-32 lg:w-78 w-78 py-12  md:w-fit text-2xl">
+        <div className="ml-16 h-96 w-96 bg-white lg:ml-44">
+          <p className="mx-auto h-32 px-4 w-fit py-12 text-2xl md:w-fit  lg:h-32 lg:w-78">
             &quot;I gained so much confidence in my ability to connect and
             deepen my relationships with people.&quot;
           </p>
-          <p className="ml-16 lg:ml-16 mt-14 lg:mt-12 md:mt-28 md:ml-4 w-fit text-2xl font-bold">Jane</p>
+          <p className="ml-16 mt-14 w-fit text-2xl font-bold md:ml-4 md:mt-28 lg:ml-16 lg:mt-12">
+            Jane
+          </p>
           <Image
             src="/jane.png"
             width="69"
             height="70"
             alt=""
-            className="ml-16 lg:ml-16 md:ml-4 mt-5"
+            className="ml-16 mt-5 md:ml-4 lg:ml-16"
           />
-          <div className="ml-16 lg:ml-16 md:ml-4">
+          <div className="ml-16 w-fit md:ml-4 lg:ml-16">
             <Stars />
           </div>
         </div>
 
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+        <div className="w-fit"></div>
+        <div className="w-fit"></div>
+        <div className="w-fit"></div>
+        <div className="w-fit"></div>
       </Slider>
     </div>
   );

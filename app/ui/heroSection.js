@@ -16,7 +16,9 @@ function HeroSection() {
         <div className="w-fit p-6 px-0 lg:static lg:left-16">
           <Vector className="fill-complimentaryGreen" />
         </div>
-        <HomePageHeroCard />
+         <div className="mx-auto h-fit w-fit sm:mt-6">
+          <HomePageHeroCard />
+        </div>
       </div>
     </section>
   );

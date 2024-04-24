@@ -11,7 +11,7 @@ function HeroCard(props) {
         {props.text}
       </p>
 
-      <div className=" my-6 sm:mt-4">
+      <div className="my-6 w-fit mx-auto sm:mt-4">
         <LinkGuide className=" mx-auto sm:m-0" />
       </div>
     </div>

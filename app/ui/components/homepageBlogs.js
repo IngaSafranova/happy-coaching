@@ -22,8 +22,8 @@ const blogs = [
 function HomepageBlogs() {
   return (
     <>
-      <div className="mx-auto w-fit  flex-col lg:grid lg:gap-x-10 lg:grid-cols-3 lg:grid-rows-1">
-        {blogs.map((blog) => {
+      <div className=" mx-auto flex w-screen  flex-col lg:grid lg:gap-x-10 lg:grid-cols-3 lg:grid-rows-1">
+          {blogs.map((blog) => {
           return (
             <BlogCard
               key={blog.title}
@@ -32,7 +32,7 @@ function HomepageBlogs() {
               text={blog.text}
             />
           );
-        })}
+        })}  
       </div>
     </>
   );
