@@ -14,10 +14,10 @@ export default function Home() {
     <>
       <HeroSection />
        <IntroductionSection />
-      {/* <ReviewsSection /> */}
+      <ReviewsSection />
      <BlogSection />
-     {/* <FreeGuideSection />
-      <CtaSection />   */}
+      <FreeGuideSection />
+     <CtaSection />  
     </>
   )
 }

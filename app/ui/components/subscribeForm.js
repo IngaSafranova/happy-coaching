@@ -56,7 +56,7 @@ export default function SubscribeForm() {
            onSubmit={handleSubmit}
            ref={ref}
            id="submitForm"
-      className="flex h-fit w-[446px] flex-col pb-10 sm:flex-row md:pb-0 lg:h-11"
+      className="flex h-fit lg:w-[446px] w-full flex-col pb-10 sm:flex-row md:pb-0 lg:h-11"
     >
       <input
                type="email"
