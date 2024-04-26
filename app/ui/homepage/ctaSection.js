@@ -1,5 +1,5 @@
 import React from "react";
-import Button from "./components/button";
+import Button from "../components/button";
 import Image from "next/image";
 
 export default function CtaSection() {

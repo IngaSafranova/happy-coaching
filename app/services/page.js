@@ -1,7 +1,10 @@
 import React from 'react'
+import HeroSection from '../ui/servicesPage/heroSection'
 
 export default function services() {
   return (
-   <h1>My Services</h1>
+    <>
+      <HeroSection/>
+   </>
   )
 }

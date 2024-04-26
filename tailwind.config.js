@@ -39,6 +39,7 @@ module.exports = {
         46: '180px',
         sectionHeight: " calc(100vh - 60px)",
         703: '703px',
+        790:'790px',
         840: '840px',
         880: '880px'
       },

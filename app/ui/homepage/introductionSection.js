@@ -1,7 +1,7 @@
 import React from "react";
-import Vector from "./components/vector";
-import IntroductionCard from "./components/introductionCard";
-import ServicesCard from "./components/servicesCard";
+import Vector from "../components/vector";
+import IntroductionCard from "../components/introductionCard";
+import ServicesCard from "../components/servicesCard";
 
 function IntroductionSection() {
   return (

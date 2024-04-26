@@ -1,7 +1,7 @@
 import React from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import Image from "next/image";
-import Stars from "./ui/components/ratingStars";
+import Stars from "./ratingStars";
 
 export function EmblaCarousel() {
   const [emblaRef] = useEmblaCarousel();

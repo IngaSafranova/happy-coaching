@@ -1,23 +1,21 @@
 "use client";
 
-
-
-import HeroSection from "./ui/heroSection";
-import IntroductionSection from "./ui/introductionSection";
-import ReviewsSection from "./ui/reviewsSection";
-import BlogSection from "./ui/blogSection";
-import FreeGuideSection from "./ui/freeGuideSection";
-import CtaSection from "./ui/ctaSection";
+import HeroSection from "./ui/homepage/heroSection";
+import IntroductionSection from "./ui/homepage/introductionSection";
+import ReviewsSection from "./ui/homepage/reviewsSection";
+import BlogSection from "./ui/homepage/blogSection";
+import FreeGuideSection from "./ui/homepage/freeGuideSection";
+import CtaSection from "./ui/homepage/ctaSection";
 
 export default function Home() {
   return (
     <>
       <HeroSection />
-       <IntroductionSection />
+      <IntroductionSection />
       <ReviewsSection />
-     <BlogSection />
+      <BlogSection />
       <FreeGuideSection />
-     <CtaSection />  
+      <CtaSection />
     </>
-  )
+  );
 }
