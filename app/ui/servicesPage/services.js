@@ -1,6 +1,5 @@
-import React from "react";
-
-import ServiceCard from "./serviceCard";
+import React from 'react'
+import ServiceCard from '../components/serviceCard';
 
 const services = [
   {
@@ -21,12 +20,17 @@ const services = [
     text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
   },
+  {
+    src: "/closedBook.svg",
+    title: "Online course",
+    text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
+  },
 ];
-
-function HomepageServices() {
+export default function Services() {
   return (
     <>
-      <div className="mx-auto w-11/12 flex-col lg:grid lg:grid-flow-col-dense lg:grid-cols-3 lg:grid-rows-1 ">
+      <div className="mx-auto w-11/12 flex-col md:w-full lg:mx-0 lg:grid lg:grid-cols-2 lg:place-items-center lg:grid-rows-2 ">
         {services.map((service) => {
           return (
             <ServiceCard
@@ -41,5 +45,3 @@ function HomepageServices() {
     </>
   );
 }
-
-export default HomepageServices;

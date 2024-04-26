@@ -26,6 +26,7 @@ module.exports = {
         62: '250px',
         78: '300px',
         85: '356px',
+        920:'920px',
         '7xl': '1280px'
       },
       screens: {
@@ -41,7 +42,9 @@ module.exports = {
         703: '703px',
         790:'790px',
         840: '840px',
-        880: '880px'
+        880: '880px',
+        1000: '1000px',
+        1100: '1100px',
       },
       minHeight: {
 'section': ' calc(100vh - 64px)'
