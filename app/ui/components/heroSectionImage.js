@@ -1,12 +1,13 @@
 import React from 'react'
 import Image from 'next/image'
+import cn from '@/app/lib/cn'
 
-function HeroSectionImage(props) {
+function HeroSectionImage({src,className}) {
   return (
- <div className="mx-auto w-5/6 sm:w-fit">
+    <div className={cn("mx-auto w-5/6 sm:w-fit", className)}>
       <Image
-        {...props}
-    src={props.src}
+        
+    src={src}
     alt="profile picture of a smiling woman"
     width={462}
     height={603}
