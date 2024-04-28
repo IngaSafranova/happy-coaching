@@ -30,7 +30,7 @@ const services = [
 export default function Services() {
   return (
     <>
-      <div className="mx-auto w-11/12 flex-col md:w-full lg:mx-0 lg:grid lg:grid-cols-2 lg:place-items-center lg:grid-rows-2 ">
+      <div className="mx-auto w-11/12 flex-col md:w-full lg:mt-0 lg:mx-0 lg:grid lg:gap-4 lg:grid-cols-2 lg:place-items-center lg:grid-rows-2 ">
         {services.map((service) => {
           return (
             <ServiceCard
@@ -38,6 +38,7 @@ export default function Services() {
               src={service.src}
               title={service.title}
               text={service.text}
+              className=" border-2 border-lightSeasolt w-fit h-fit px-3 py-10 lg:w-450 lg:h-90 place-content-center lg:px-16 lg:mt-0  "
             />
           );
         })}
