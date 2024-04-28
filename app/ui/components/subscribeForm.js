@@ -56,7 +56,7 @@ export default function SubscribeForm() {
            onSubmit={handleSubmit}
            ref={ref}
            id="submitForm"
-      className="flex h-fit lg:w-[446px] w-full flex-col pb-10 sm:flex-row md:pb-0 lg:h-11"
+      className="flex h-fit lg:w-[446px] w-screen sm:10/12 mx-auto flex-col pb-10 sm:flex-row md:pb-0 lg:h-11"
     >
       <input
                type="email"
@@ -65,12 +65,12 @@ export default function SubscribeForm() {
         value={email.name}
         onChange={handleChange}
         placeholder="Enter your email"
-        className=" mb-6 ml-16 mr-4 w-8/12 sm:w-3/4 sm:p-0 sm:pl-2 sm:m-0 md:mr-4 border-2 border-lightSeasolt px-3 py-4 md:mb-0"
+        className=" mb-6 w-9/12 text-center mx-auto sm:w-1/2 sm:ml-24 sm:p-0 sm:pl-2 sm:m-0 md:mr-4 border-2 border-lightSeasolt px-3 py-4 md:mb-0"
       />
       <button
               type="submit"
             disabled={!canSave}
-        className="ml-24 h-11 w-[150px] rounded-lg sm:px-2 sm:ml-4 bg-complimentaryGreen py-2 text-base font-medium text-white md:ml-0"
+        className=" h-11 w-[150px] mx-auto rounded-lg sm:px-2 sm:ml-4 bg-complimentaryGreen py-2 text-base font-medium text-white md:ml-0"
       >
         Subscribe
       </button>
