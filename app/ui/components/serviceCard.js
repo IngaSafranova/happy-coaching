@@ -9,7 +9,7 @@ function ServiceCard({className, src,title,text}) {
         <Image  src={src} alt="" width={72} height={72} />
       </div>
       <div className="w-78 h-36 py-3">
-        <h3 className="text-darkestBlue py-3 text-2xl font-bold">
+        <h3 className="text-darkestBlue py-3 text-2xl font-bold hover:text-complimentaryGreen">
           {title}
         </h3>
         <p className="w-fit pl-3 text-base text-gray">{text}</p>
