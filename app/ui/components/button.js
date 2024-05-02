@@ -5,7 +5,7 @@ export default function Button({ text, className, onClick }) {
   return (
       <button
           type='button'
-          className={cn('w-62 h-10  rounded-xl bg-complimentaryGreen text-white', className)}
+          className={cn('w-62 h-10  rounded-xl bg-complimentaryGreen text-white hover:font-semibold', className)}
           onClick={onClick}
       >
         {text} 

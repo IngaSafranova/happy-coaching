@@ -2,16 +2,16 @@
 
 import Image from 'next/image';
 import React,{useState} from 'react'
+import cn from '@/app/lib/cn';
 
 
-
-export default function AccordationCard({ title,text }) {
+export default function AccordationCard({ title,text, className }) {
     
     const[isActive, setIsActive] = useState(false)
 
   return (
     <>
-      <div className="mx-auto py-10 h-fit w-11/12 border-b-[1px] border-b-slate-400 lg:w-768">
+      <div className={cn("mx-auto py-10 h-fit w-11/12 border-b-[1px] border-b-slate-400 lg:w-768", className)}>
         <div
           className=" flex cursor-pointer w-11/12 justify-between lg:w-768 "
           onClick={() => setIsActive(!isActive)}

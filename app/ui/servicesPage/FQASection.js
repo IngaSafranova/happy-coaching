@@ -1,6 +1,7 @@
 import React from 'react'
 import AccordationCard from '../components/accordationCard';
 import Accordation from './accordation';
+import MoreQuestions from './moreQuestions';
 
 export default function FQASection() {
   return (
@@ -10,7 +11,8 @@ export default function FQASection() {
           Good to know.
               </h3>
         <p className='text-center mx-auto w-fit p-2 pb-10 text-xl'>Everything you need to know about my services.</p>
-        <Accordation/>
+        <Accordation />
+        <MoreQuestions/>
       </div>
     </section>
   );

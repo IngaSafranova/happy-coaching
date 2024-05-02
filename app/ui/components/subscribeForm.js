@@ -70,7 +70,7 @@ export default function SubscribeForm() {
       <button
               type="submit"
             disabled={!canSave}
-        className=" h-11 w-[150px] mx-auto rounded-lg sm:px-2 sm:ml-4 bg-complimentaryGreen py-2 text-base font-medium text-white md:ml-0"
+        className=" h-11 w-[150px] mx-auto rounded-lg sm:px-2 sm:ml-4 bg-complimentaryGreen py-2 text-base font-medium hover:font-semibold text-white md:ml-0"
       >
         Subscribe
       </button>

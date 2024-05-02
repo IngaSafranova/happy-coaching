@@ -33,7 +33,8 @@ export default function Accordation() {
                   <AccordationCard
                       key={data.title}
                       title={data.title}
-                      text={data.text}
+                  text={data.text}
+                  className = 'last-of-type:border-none'
                   />
               )
           })}
