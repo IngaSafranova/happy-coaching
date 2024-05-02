@@ -10,18 +10,18 @@ export default function AccordationCard({ title,text }) {
     const[isActive, setIsActive] = useState(false)
 
   return (
-    <React.Fragment>
-      <div className="mx-auto h-21 w-fit border-b-[1px] border-b-slate-400 lg:w-768">
+    <>
+      <div className="mx-auto py-10 h-fit w-11/12 border-b-[1px] border-b-slate-400 lg:w-768">
         <div
-          className="mx-auto flex h-21 w-fit gap-x-2 lg:w-768 "
+          className=" flex cursor-pointer w-11/12 justify-between lg:w-768 "
           onClick={() => setIsActive(!isActive)}
         >
-          <div className="text-lg font-medium text-darkBlue">{title}</div>
-          <div>
+          <div className="text-lg w-11/12 font-medium pb-3 text-darkestBlue">{title}</div>
+          <div className='w-6 h-6'>
             {isActive ? (
-              <Image src="/plus.svg" alt="" width={22} height={22} />
-            ) : (
               <Image src="/minus.svg" alt="" width={22} height={22} />
+            ) : (
+              <Image src="/plus.svg" alt="" width={22} height={22} />
             )}
           </div>
         </div>
@@ -31,6 +31,6 @@ export default function AccordationCard({ title,text }) {
           </div>
         )}
       </div>
-    </React.Fragment>
+    </>
   );
 }

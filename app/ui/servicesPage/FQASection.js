@@ -9,7 +9,7 @@ export default function FQASection() {
         <h3 className="mx-auto w-full pb-5 text-center text-3xl font-extrabold  text-darkBlue lg:text-5xl lg:leading-[44px]">
           Good to know.
               </h3>
-        <p className='text-center mx-auto w-fit p-2 text-xl'>Everything you need to know about my services.</p>
+        <p className='text-center mx-auto w-fit p-2 pb-10 text-xl'>Everything you need to know about my services.</p>
         <Accordation/>
       </div>
     </section>
