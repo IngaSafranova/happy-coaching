@@ -4,7 +4,7 @@ import { usePathname } from "next/navigation";
 import clsx from "clsx";
 
 
-export default function LinkGuide({className }) {
+export default function LinkGuide({className, text }) {
     
     const pathName = usePathname()
     
@@ -18,7 +18,7 @@ export default function LinkGuide({className }) {
       },className
     )}
   >
-    Get your free guide now
+    {text}
         </Link>
     )
 }
