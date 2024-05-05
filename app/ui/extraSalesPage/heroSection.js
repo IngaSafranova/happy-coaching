@@ -11,7 +11,7 @@ function HeroSection() {
   return (
     <section className="mx-auto flex h-full w-screen flex-col-reverse justify-evenly bg-seasalt  lg:max-w-8xl lg:flex-row-reverse ">
       <div className="mx-auto h-fit pt-32 w-fit sm:mt-6">
-        {/* <SuccessSvg /> */}
+        
         <HeroSectionImage src="/people-asking-questions.png"/>
       </div>
       <div className=" p-4">
