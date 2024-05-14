@@ -8,8 +8,7 @@ export default function FeaturesCard({className, title, text}) {
         {title}
       </h2>
       <p className='w-full h-fit text-xl text-center'>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua minim veniam.
+        {text}
       </p>
     </div>
   );
