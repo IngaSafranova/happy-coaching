@@ -12,7 +12,7 @@ const width = "100vw";
 
 export const metadata = {
   title: "Happy Coaching website",
-  description: "reatedby I.S.",
+  description: "createdby I.S.",
 };
 
 export default function RootLayout({ children }) {
